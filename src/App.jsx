@@ -38,7 +38,7 @@ function App() {
         />
       </head>
       <header>
-        <a href="/">Pratik Chemate</a>
+        <a>Pratik Chemate</a>
         <nav>
           <a
             target="_blank"
