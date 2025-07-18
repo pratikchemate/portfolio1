@@ -1,0 +1,151 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer,
+main {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav i {
+  font-size: 1.5rem;
+}
+main,
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  gap: 4rem;
+}
+
+section {
+  gap: 1rem;
+}
+
+.intro-header p {
+  padding-top: 0.3rem;
+}
+
+.intro-description {
+  max-width: 500px;
+}
+
+.links-container {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.link-arrow {
+  color: var(--color-link);
+  transform: rotate(-45deg);
+}
+
+.color-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.project-card > div:first-of-type {
+  flex: 1;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.project-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 0rem;
+  gap: 0.5rem;
+  align-self: center;
+}
+.tech-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0.25rem 0;
+}
+@media (min-width: 640px) {
+  .project-card {
+    flex-direction: row;
+  }
+
+  .project-card .img-div {
+    max-width: 45%;
+    padding-left: 1rem;
+  }
+}
+
+.class-button-secondary p {
+  justify-content: center;
+}
+.tech-list div {
+  padding: 0.1rem 0.5rem;
+  border-radius: var(--border-radius-small);
+}
+.tech-list p {
+  font-size: 0.8 rem;
+}
+.project-links a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.project-links a:hover {
+  transform: scale(1.05);
+  color: var(--color-link-hover, dodgerblue); /* optional variable */
+}
+@keyframes smoothBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+[data-aos="custom-bounce"] {
+  opacity: 0;
+  animation: smoothBounce 1s ease-out forwards;
+}
+
+.bounce-in {
+  animation: bounceInDown 1s ease forwards;
+}
