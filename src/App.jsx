@@ -59,33 +59,45 @@ function App() {
 
       <main>
         <section className="bounce-in" data-aos="fade-up">
-          <div className="intro-header">
-            <h1>Pratik Chemate</h1>
-            <p>Software Developer</p>
-          </div>
-          <div className="intro-description">
-            <h5>
-              A computer engineer by qualification, a coder by trade! <br />
-              Based in Pune, INDIA.
-            </h5>
-          </div>
-          <div className="links-container">
-            <i className="fa-solid link-arrow fa-arrow-right"></i>
-            <a href="mailto:pratikchemate@gmail.com">Email me</a>
-            <a
-              href="https://github.com/pratikchemate"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/pratikchemate/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
+          <div className="intro-container">
+            {/* Left: Intro Text */}
+            <div className="intro-text">
+              <h1>Pratik Chemate</h1>
+              <p>Software Developer</p>
+              <div className="intro-description">
+                <h5>
+                  A computer engineer by qualification, a coder by trade! <br />
+                  Based in Pune, INDIA.
+                </h5>
+              </div>
+              <div className="links-container">
+                <i className="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:pratikchemate@gmail.com">Email me</a>
+                <a
+                  href="https://github.com/pratikchemate"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/pratikchemate/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            {/* Right: Image */}
+            <div className="profile-pic">
+              <img
+                className="imd"
+                src="/Pratik_profile_pic.jpg"
+                alt="Pratik Chemate"
+              />
+            </div>
           </div>
 
           {/* <div id="play-game">

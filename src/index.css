@@ -31,6 +31,7 @@ main,
 section {
   display: flex;
   flex-direction: column;
+  clear: both;
 }
 
 main {
@@ -46,14 +47,19 @@ section {
 }
 
 .intro-description {
-  max-width: 500px;
+  max-width: 600px;
 }
-
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
 .links-container {
   padding: 1rem 0;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .link-arrow {
@@ -148,4 +154,52 @@ section {
 
 .bounce-in {
   animation: bounceInDown 1s ease forwards;
+}
+
+/* @media (min-width: 640px) {
+  .profile-pic {
+    flex-direction: row;
+  }
+
+  .profile-pic .imd {
+    max-width: 40%;
+    padding-left: 1rem;
+  }
+} */
+
+/* .imd {
+  border-radius: 40%;
+  max-width: 30%;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  align-content: end;
+  justify-content: center;
+} */
+
+@media (min-width: 868px) {
+  .intro-container {
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: flex-start; ✅ Top align both sections */
+  }
+
+  .intro-text {
+    text-align: left;
+    max-width: 600px;
+  }
+
+  .profile-pic {
+    margin-left: 2rem;
+    margin-top: 0; /* ✅ Prevent vertical offset */
+  }
+}
+
+.imd {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  float: right;
 }
