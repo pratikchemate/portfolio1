@@ -42,6 +42,13 @@ function App() {
         <nav>
           <a
             target="_blank"
+            href="https://www.instagram.com/pratik.chemate/"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            target="_blank"
             href="https://github.com/pratikchemate"
             rel="noreferrer"
           >
@@ -86,6 +93,13 @@ function App() {
                   rel="noreferrer"
                 >
                   LinkedIn
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1AAG2Ob-I63-IMktAgxPhQ9tLDuuUjDZV/view?usp=drive_link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  My-Resume
                 </a>
               </div>
             </div>
