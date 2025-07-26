@@ -4,7 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./index.css";
 import "./fanta.css";
-
 import { useEffect } from "react";
 
 function App() {
@@ -14,17 +13,6 @@ function App() {
   useEffect(() => {
     AOS.init({ duration: 1000, easing: "ease-out-back" });
   }, []);
-
-  const handleColorChange = (e) => {
-    setColor(e.target.value);
-    document.body.style.background = e.target.value;
-  };
-
-  const resetColor = () => {
-    setColor("#0084ff");
-    document.body.style.background = "#ffffff";
-    setShowColorDiv(false);
-  };
 
   return (
     <>
@@ -87,6 +75,7 @@ function App() {
                 >
                   GitHub
                 </a>
+
                 <a
                   href="https://www.linkedin.com/in/pratikchemate/"
                   target="_blank"
@@ -162,12 +151,17 @@ function App() {
             <div className="project-card">
               <div className="tech-list">
                 <div className="card-button-secondary">
-                  <p>ChatBot for Career Counselling</p>
+                  <p>The Brogram – 30-Day Workout Tracker</p>
                 </div>
                 <p>
-                  Developed an intelligent chatbot for career counselling using
-                  Java and SQL, designed to streamline guidance processes and
-                  provide personalized career advice.
+                  Brogram is a simple, interactive 30-day workout tracking web
+                  app that helps users stay consistent with their fitness goals.
+                  Built with React.js and Vite, it features a clear
+                  Push-Pull-Legs split, intuitive visual progress tracking, and
+                  motivational rules for healthy habits. Users can view, select,
+                  and mark their daily workouts, making it easy to follow a
+                  structured routine and track achievements throughout the
+                  month.
                 </p>
               </div>
               <div
@@ -178,21 +172,27 @@ function App() {
                   gap: "0.5rem",
                 }}
               >
-                <a target="_blank" href="/">
+                <a
+                  target="_blank"
+                  href="https://brogram-pratik-chemate.vercel.app"
+                >
                   Live
                 </a>
-                <a target="_blank" href="/">
+                <a
+                  target="_blank"
+                  href="https://github.com/pratikchemate/Brogram/"
+                >
                   GitHub
                 </a>
               </div>
               <div className="img-div">
-                <img src="/fantacss.png" alt="project" />
+                <img src="/brogram.png" alt="project" />
               </div>
             </div>
             <div className="project-card">
               <div className="tech-list">
                 <div className="card-button-secondary">
-                  <p>GitHub profile searcher using Git API </p>
+                  <p>GitHub profile searcher using Git API</p>
                 </div>
                 <p>
                   Developed a GitHub Profile Searcher using Git API,
