@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import "./index.css";
 import "./fanta.css";
 import { useEffect } from "react";
+import Experience from "./Experience.jsx";
 
 function App() {
   const [color, setColor] = useState("#0084ff");
@@ -84,7 +85,7 @@ function App() {
                   LinkedIn
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1AAG2Ob-I63-IMktAgxPhQ9tLDuuUjDZV/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1b1zHhD5vPE7SQElwjUFqlosJIHBuTZHY/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -127,27 +128,116 @@ function App() {
             </thead>
             <tbody>
               <tr>
+                <td>Languages</td>
+                <td>Java | Python | SQL | CPP</td>
+              </tr>
+              <tr>
+                <td>Databases/Tools</td>
+                <td>MongoDB | MySQL | Git/GitHub | Postman | REST APIs</td>
+              </tr>
+
+              <tr>
+                <td>Frameworks/Libraries</td>
+                <td>
+                  Spring Boot | Pandas | NumPy | Seaborn | Matplotlib | Django
+                </td>
+              </tr>
+              <tr>
                 <td>Javascript</td>
-                <td>ReactJS | NodeJS | NextJS | ExpressJS</td>
+                <td>ReactJS | NodeJS | NextJS | ExpressJS | TailwindCSS</td>
               </tr>
-              <tr>
-                <td>Python</td>
-                <td>Data analytics | Django</td>
-              </tr>
-              <tr>
+              {/*               <tr>
                 <td>Web</td>
                 <td>TailwindCSS | SQL | PostgreSQL | Firebase | AWS</td>
-              </tr>
-              {/* <!-- <tr>
-              <td></td>
-              <td></td>
-            </tr> --> */}
+              </tr> */}
             </tbody>
           </table>
         </section>
+        <section className="bounce-in" data-aos="fade-up">
+          <h2>Experience</h2>
+          <table class="experience-table">
+            <tbody>
+              <tr>
+                <td class="exp-details">
+                  <i class="company">EY GDS</i> —{" "}
+                  <span class="role">Full-Stack Developer Intern</span>
+                  <ul>
+                    <li>
+                      Built a Paytm Wallet Clone using MERN with JWT auth,
+                      balance & transaction flows.
+                    </li>
+                    <li>
+                      Improved API response times by ~30% via MongoDB indexing
+                      and reduced over-fetching.
+                    </li>
+                    <li>
+                      Presented prototype to industry experts; completed a
+                      6‑week program with Edunet Foundation & AICTE.
+                    </li>
+                  </ul>
+                </td>
+                <td class="exp-date">Dec 2024 – Jan 2025</td>
+              </tr>
+              <tr>
+                <td class="exp-details">
+                  <i class="company">MITU Skillologies</i> —{" "}
+                  <span class="role">Data Analytics Intern</span>
+                  <ul>
+                    <li>
+                      Worked on Python programming for Data Science & Analytics
+                      using NumPy, Pandas, Seaborn, Matplotlib.
+                    </li>
+                    <li>
+                      Completed 3 projects focused on analytics and contributed
+                      to innovative solutions.
+                    </li>
+                  </ul>
+                </td>
+                <td class="exp-date">Jul 2022 – Aug 2022</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        {/* <Experience /> */}
         <section className="bounce-in" data-aos="fade-down">
           <h2>Projects</h2>
           <div className="cards-grid">
+            <div className="project-card">
+              <div className="tech-list">
+                <div className="card-button-secondary">
+                  <p>AI Email Reply Generator</p>
+                </div>
+                <p>
+                  Built a full-stack AI email reply generator using Spring Boot
+                  (REST API with WebClient), React (MUI) and integrating Google
+                  Gemini (API) for context-aware drafts with selectable tone.
+                  Implemented structured prompt construction, JSON parsing of
+                  model responses, loading/error states, and clipboard copy in
+                  UI.
+                </p>
+              </div>
+              <div
+                className="project-links"
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "0.5rem",
+                }}
+              >
+                {/* <a target="_blank" href="/">
+                  Live
+                </a> */}
+                <a
+                  target="_blank"
+                  href="https://github.com/pratikchemate/AI-Email-replier"
+                >
+                  GitHub
+                </a>
+              </div>
+              <div className="img-div">
+                <img src="/AI-email.png" alt="project" />
+              </div>
+            </div>
             <div className="project-card">
               <div className="tech-list">
                 <div className="card-button-secondary">
@@ -192,14 +282,17 @@ function App() {
             <div className="project-card">
               <div className="tech-list">
                 <div className="card-button-secondary">
-                  <p>GitHub profile searcher using Git API</p>
+                  <p>Paytm Wallet Clone</p>
                 </div>
                 <p>
-                  Developed a GitHub Profile Searcher using Git API,
-                  streamlining the retrieval of user profiles and repositories
-                  with a userfriendly interface. Achieved a 40% improvement in
-                  data retrieval efficiency, enhancing user experience and
-                  showcasing proficiency in API integration and UI/UX design.
+                  Designed and implemented a secure authentication system with
+                  role-based access control, full wallet management (create,
+                  read, update, delete), and money transfer functionality, along
+                  with protected API routes and detailed transaction history
+                  tracking. Optimized database queries and API performance —
+                  leveraging targeted indexing, reduced/lean payload structures,
+                  and aggregation pipelines — resulting in approximately 30%
+                  faster average response times.
                 </p>
               </div>
               <div
@@ -210,17 +303,67 @@ function App() {
                   gap: "0.5rem",
                 }}
               >
-                <a target="_blank" href="/">
+                {/* <a target="_blank" href="/">
                   Live
-                </a>
-                <a target="_blank" href="/">
+                </a> */}
+                <a
+                  target="_blank"
+                  href="https://github.com/pratikchemate/Paytm-Clone"
+                >
                   GitHub
                 </a>
               </div>
               <div className="img-div">
-                <img src="/fantacss.png" alt="project" />
+                <img src="/Paytm.png" alt="project" />
               </div>
             </div>
+          </div>
+        </section>
+        {/* Achievements & Certificates */}
+        <section className="bounce-in" data-aos="fade-up">
+          <h2 className="achievements-heading">Achievements & Certificates</h2>
+
+          <div className="achievements-list">
+            {/* Item 1 */}
+            <article className="achievement-card">
+              <div className="achievement-thumb">
+                <img src="/IBM.png" alt="Investment award email" />
+              </div>
+              <div className="achievement-body">
+                <h4>
+                  IBM Full Stack Software Developer Professional Certificate
+                </h4>
+                <a
+                  className="achievement-link"
+                  href="https://www.coursera.org/account/accomplishments/specialization/S8BS422X5XWW"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Know more →
+                </a>
+              </div>
+            </article>
+
+            {/* Item 2 */}
+            <article className="achievement-card">
+              <div className="achievement-thumb">
+                <img src="/IEEE.png" alt="Shapatya 1st place" />
+              </div>
+              <div className="achievement-body">
+                <h4>
+                  IEEE Paper submitted: AI-Powered Resume Parsing <br />
+                  using Django
+                </h4>
+                <a
+                  className="achievement-link"
+                  href="https://ieeexplore.ieee.org/document/11031656/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Know more →
+                </a>
+              </div>
+            </article>
           </div>
         </section>
       </main>

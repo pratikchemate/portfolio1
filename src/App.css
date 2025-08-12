@@ -101,9 +101,107 @@ section {
   }
 
   .project-card .img-div {
-    max-width: 45%;
+    max-width: 70%;
     padding-left: 1rem;
   }
+}
+.achievement-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.achievement-link::after {
+  content: "↗";
+  font-size: 0.95em;
+  transform: translateY(1px);
+}
+
+.achievement-link:hover {
+  text-decoration: underline;
+}
+.certifications-list {
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+/* Larger image with stable flex row layout */
+.achievement-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--card-bg, #fff);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 16px; /* slightly larger padding to balance the bigger image */
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Increase thumbnail size for readability */
+.achievement-thumb {
+  flex: 0 0 220px; /* wider for readability */
+  height: auto;
+  aspect-ratio: 16 / 10; /* consistent shape */
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps aspect filling without distortion */
+}
+
+/* Let text take the remaining space */
+.achievement-body {
+  flex: 1;
+  min-width: 0; /* prevent overflow issues in flex containers */
+}
+
+/* Optional: slightly larger title for balance */
+.achievement-body h3 {
+  margin: 0 0 8px;
+  font-size: 1.12rem; /* was ~1.05rem */
+  font-weight: 700;
+}
+
+/* Optional: comfortable reading size */
+.achievement-body p {
+  margin: 0 0 10px;
+  color: #6b7280;
+  line-height: 1.6;
+  font-size: 1rem; /* was 0.95rem */
+}
+
+/* Keep it responsive: stack on small screens, and let image scale full width */
+@media (max-width: 640px) {
+  .achievement-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .achievement-thumb {
+    width: 100%;
+    height: 220px; /* taller on mobile for visibility */
+    flex: 0 0 auto; /* allow width to follow 100% */
+  }
+}
+
+.certifications-list li {
+  margin-bottom: 0.5rem;
 }
 
 .class-button-secondary p {
@@ -148,4 +246,64 @@ section {
 
 .bounce-in {
   animation: bounceInDown 1s ease forwards;
+}
+.experience-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 16px; /* spacing between rows */
+  font-family: "Segoe UI", sans-serif;
+}
+
+.experience-table tr {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.experience-table td {
+  padding: 16px 20px;
+  vertical-align: top;
+}
+
+.experience-table .company {
+  font-weight: 600;
+  color: #5a4be7; /* accent color */
+}
+
+.experience-table .role {
+  font-weight: 500;
+  color: #222;
+}
+
+.experience-table .exp-date {
+  white-space: nowrap;
+  color: #777;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.experience-table ul {
+  margin: 8px 0 0 16px;
+  padding: 0;
+}
+
+.experience-table li {
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .experience-table tr {
+    display: block;
+  }
+  .experience-table td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .experience-table .exp-date {
+    padding-top: 0;
+    margin-top: -8px;
+    font-style: italic;
+  }
 }
