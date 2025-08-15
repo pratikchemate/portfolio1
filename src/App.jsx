@@ -68,6 +68,7 @@ function App() {
                     <ul>
                  <li> I’m a passionate and adaptable developer with strong skills in Java, Python, JavaScript, SQL, and modern frameworks like React, Node.js, Express, and Spring Boot.</li>
 <li>I focus on building secure, scalable, and user-friendly applications, backed by solid knowledge of DSA, OOP, OS, and AI/ML basics.</li>
+                      <li>Open to networking, collaboration, and opportunities where technology meets innovation.</li>
 </ul>
                   </p>
                 <h5>
