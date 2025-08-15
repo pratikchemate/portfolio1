@@ -327,7 +327,7 @@ function App() {
             {/* Item 1 */}
             <article className="achievement-card">
               <div className="achievement-thumb">
-                <img src="/IBM.png" alt="Investment award email" />
+                <img src="/IBM.png" alt="IBM" />
               </div>
               <div className="achievement-body">
                 <h4>
@@ -347,7 +347,7 @@ function App() {
             {/* Item 2 */}
             <article className="achievement-card">
               <div className="achievement-thumb">
-                <img src="/IEEE.png" alt="Shapatya 1st place" />
+                <img src="/IEEE.png" alt="IEEE" />
               </div>
               <div className="achievement-body">
                 <h4>
@@ -362,6 +362,25 @@ function App() {
                 >
                   Know more →
                 </a>
+              </div>
+            </article>
+
+             <article className="achievement-card">
+              <div className="achievement-thumb">
+                <img src="/PL_SQL.jpg" alt="Oracle" />
+              </div>
+              <div className="achievement-body">
+                <h4>
+                  Oracle Certified Database programmer using PL/SQL
+                </h4>
+{/*                 <a
+                  className="achievement-link"
+                  href="https://ieeexplore.ieee.org/document/11031656/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Know more →
+                </a> */}
               </div>
             </article>
           </div>
