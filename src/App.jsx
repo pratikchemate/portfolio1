@@ -339,7 +339,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Know more →
+                  Know more
                 </a>
               </div>
             </article>
@@ -360,7 +360,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Know more →
+                  Know more
                 </a>
               </div>
             </article>
