@@ -351,7 +351,7 @@ function App() {
               </div>
               <div className="achievement-body">
                 <h4>
-                  IEEE Paper submitted: AI-Powered Resume Parsing <br />
+                  IEEE Paper submitted: AI-Powered Resume Parsing
                   using Django
                 </h4>
                 <a
