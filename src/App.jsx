@@ -155,79 +155,28 @@ function App() {
             </thead>
             <tbody>
               <tr>
-                <td>Languages</td>
-                <td>Java | Python | SQL | CPP</td>
+                <td>Javascript</td>
+                <td>ReactJS | NodeJS | NextJS | ExpressJS</td>
               </tr>
               <tr>
-                <td>
-                  Databases &<br />
-                  Tools
-                </td>
+                <td>Databases/Tools</td>
                 <td>MongoDB | MySQL | Git/GitHub | Postman | REST APIs</td>
               </tr>
 
               <tr>
-                <td>
-                  Frameworks &<br />
-                  Libraries
-                </td>
+                <td>Frameworks/Libraries</td>
                 <td>
                   Spring Boot | Pandas | NumPy | Seaborn | Matplotlib | Django
                 </td>
               </tr>
               <tr>
-                <td>Javascript</td>
-                <td>ReactJS | NodeJS | NextJS | ExpressJS | TailwindCSS</td>
-              </tr>
-              {/*               <tr>
                 <td>Web</td>
                 <td>TailwindCSS | SQL | PostgreSQL | Firebase | AWS</td>
-              </tr> */}
-            </tbody>
-          </table>
-        </section>
-        <section className="bounce-in" data-aos="fade-up">
-          <h2>Experience</h2>
-          <table class="experience-table">
-            <tbody>
-              <tr>
-                <td class="exp-details">
-                  <i class="company">EY GDS</i> —{" "}
-                  <span class="role">Full-Stack Developer Intern</span>
-                  <ul>
-                    <li>
-                      Built a Paytm Wallet Clone using MERN with JWT auth,
-                      balance & transaction flows.
-                    </li>
-                    <li>
-                      Improved API response times by ~30% via MongoDB indexing
-                      and reduced over-fetching.
-                    </li>
-                    <li>
-                      Presented prototype to industry experts; completed a
-                      6‑week program with Edunet Foundation & AICTE.
-                    </li>
-                  </ul>
-                </td>
-                <td class="exp-date">Dec 2024 – Jan 2025</td>
               </tr>
-              <tr>
-                <td class="exp-details">
-                  <i class="company">MITU Skillologies</i> —{" "}
-                  <span class="role">Data Analytics Intern</span>
-                  <ul>
-                    <li>
-                      Worked on Python programming for Data Science & Analytics
-                      using NumPy, Pandas, Seaborn, Matplotlib.
-                    </li>
-                    <li>
-                      Completed 3 projects focused on analytics and contributed
-                      to innovative solutions.
-                    </li>
-                  </ul>
-                </td>
-                <td class="exp-date">Jul 2022 – Aug 2022</td>
-              </tr>
+              {/* <!-- <tr>
+              <td></td>
+              <td></td>
+            </tr> --> */}
             </tbody>
           </table>
         </section>

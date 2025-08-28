@@ -2,6 +2,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: coral;
+
 }
 
 header,
@@ -126,13 +128,14 @@ section {
 .certifications-list {
   padding-left: 1.2rem;
   line-height: 1.6;
+  gap: 2rem;
 }
 /* Larger image with stable flex row layout */
 .achievement-card {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1.25rem;
+  gap: 2.25rem;
   background: var(--card-bg, #fff);
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;
