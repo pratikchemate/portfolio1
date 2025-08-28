@@ -50,6 +50,14 @@ function App() {
           >
             <i className="fa-brands fa-linkedin"></i>
           </a>
+          <a
+            target="_blank"
+            href="https://leetcode.com/u/b5jvSTNZuz/"
+            rel="noreferrer"
+            alt="LeetCode"
+          >
+            <i class="fa-solid fa-code"></i>
+          </a>
         </nav>
       </header>
 
@@ -63,15 +71,6 @@ function App() {
               <div className="intro-description">
                 <h5>
                   A computer engineer by qualification, a coder by trade! <br />
-                  </h5>
-                  <p>
-                    <ul>
-                 <li> I’m a passionate and adaptable developer with strong skills in Java, Python, JavaScript, SQL, and modern frameworks like React, Node.js, Express, and Spring Boot.</li>
-<li>I focus on building secure, scalable, and user-friendly applications, backed by solid knowledge of DSA, OOP, OS, and AI/ML basics.</li>
-                      <li>Open to networking, collaboration, and opportunities where technology meets innovation.</li>
-</ul>
-                  </p>
-                <h5>
                   Based in Pune, INDIA.
                 </h5>
               </div>
@@ -137,73 +136,21 @@ function App() {
             </thead>
             <tbody>
               <tr>
-                <td>Languages</td>
-                <td>Java | Python | SQL | CPP</td>
-              </tr>
-              <tr>
-                <td>Databases &<br/>Tools</td>
-                <td>MongoDB | MySQL | Git/GitHub | Postman | REST APIs</td>
-              </tr>
-
-              <tr>
-                <td>Frameworks &<br/>Libraries</td>
-                <td>
-                  Spring Boot | Pandas | NumPy | Seaborn | Matplotlib | Django
-                </td>
-              </tr>
-              <tr>
                 <td>Javascript</td>
-                <td>ReactJS | NodeJS | NextJS | ExpressJS | TailwindCSS</td>
+                <td>ReactJS | NodeJS | NextJS | ExpressJS</td>
               </tr>
-              {/*               <tr>
+              <tr>
+                <td>Python</td>
+                <td>Data analytics | Django</td>
+              </tr>
+              <tr>
                 <td>Web</td>
                 <td>TailwindCSS | SQL | PostgreSQL | Firebase | AWS</td>
-              </tr> */}
-            </tbody>
-          </table>
-        </section>
-        <section className="bounce-in" data-aos="fade-up">
-          <h2>Experience</h2>
-          <table class="experience-table">
-            <tbody>
-              <tr>
-                <td class="exp-details">
-                  <i class="company">EY GDS</i> —{" "}
-                  <span class="role">Full-Stack Developer Intern</span>
-                  <ul>
-                    <li>
-                      Built a Paytm Wallet Clone using MERN with JWT auth,
-                      balance & transaction flows.
-                    </li>
-                    <li>
-                      Improved API response times by ~30% via MongoDB indexing
-                      and reduced over-fetching.
-                    </li>
-                    <li>
-                      Presented prototype to industry experts; completed a
-                      6‑week program with Edunet Foundation & AICTE.
-                    </li>
-                  </ul>
-                </td>
-                <td class="exp-date">Dec 2024 – Jan 2025</td>
               </tr>
-              <tr>
-                <td class="exp-details">
-                  <i class="company">MITU Skillologies</i> —{" "}
-                  <span class="role">Data Analytics Intern</span>
-                  <ul>
-                    <li>
-                      Worked on Python programming for Data Science & Analytics
-                      using NumPy, Pandas, Seaborn, Matplotlib.
-                    </li>
-                    <li>
-                      Completed 3 projects focused on analytics and contributed
-                      to innovative solutions.
-                    </li>
-                  </ul>
-                </td>
-                <td class="exp-date">Jul 2022 – Aug 2022</td>
-              </tr>
+              {/* <!-- <tr>
+              <td></td>
+              <td></td>
+            </tr> --> */}
             </tbody>
           </table>
         </section>
@@ -336,7 +283,7 @@ function App() {
             {/* Item 1 */}
             <article className="achievement-card">
               <div className="achievement-thumb">
-                <img src="/IBM.png" alt="IBM" />
+                <img src="/IBM.png" alt="Investment award email" />
               </div>
               <div className="achievement-body">
                 <h4>
@@ -348,7 +295,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Know more
+                  Know more →
                 </a>
               </div>
             </article>
@@ -356,11 +303,11 @@ function App() {
             {/* Item 2 */}
             <article className="achievement-card">
               <div className="achievement-thumb">
-                <img src="/IEEE.png" alt="IEEE" />
+                <img src="/IEEE.png" alt="Shapatya 1st place" />
               </div>
               <div className="achievement-body">
                 <h4>
-                  IEEE Paper submitted: AI-Powered Resume Parsing
+                  IEEE Paper submitted: AI-Powered Resume Parsing <br />
                   using Django
                 </h4>
                 <a
@@ -369,27 +316,8 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Know more
-                </a>
-              </div>
-            </article>
-
-             <article className="achievement-card">
-              <div className="achievement-thumb">
-                <img src="/PL_SQL.jpg" alt="Oracle" />
-              </div>
-              <div className="achievement-body">
-                <h4>
-                  Oracle Certified Database programmer using PL/SQL
-                </h4>
-{/*                 <a
-                  className="achievement-link"
-                  href="https://ieeexplore.ieee.org/document/11031656/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
                   Know more →
-                </a> */}
+                </a>
               </div>
             </article>
           </div>
