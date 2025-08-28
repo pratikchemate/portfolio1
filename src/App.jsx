@@ -50,6 +50,14 @@ function App() {
           >
             <i className="fa-brands fa-linkedin"></i>
           </a>
+          <a
+            target="_blank"
+            href="https://leetcode.com/u/b5jvSTNZuz/"
+            rel="noreferrer"
+            alt="LeetCode"
+          >
+            <i class="fa-solid fa-code"></i>
+          </a>
         </nav>
       </header>
 
@@ -63,8 +71,27 @@ function App() {
               <div className="intro-description">
                 <h5>
                   A computer engineer by qualification, a coder by trade! <br />
-                  Based in Pune, INDIA.
                 </h5>
+                <p>
+                  <ul>
+                    <li>
+                      {" "}
+                      I’m a passionate and adaptable developer with strong
+                      skills in Java, Python, JavaScript, SQL, and modern
+                      frameworks like React, Node.js, Express, and Spring Boot.
+                    </li>
+                    <li>
+                      I focus on building secure, scalable, and user-friendly
+                      applications, backed by solid knowledge of DSA, OOP, OS,
+                      and AI/ML basics.
+                    </li>
+                    <li>
+                      Open to networking, collaboration, and opportunities where
+                      technology meets innovation.
+                    </li>
+                  </ul>
+                </p>
+                <h5>Based in Pune, INDIA.</h5>
               </div>
               <div className="links-container">
                 <i className="fa-solid link-arrow fa-arrow-right"></i>
@@ -132,12 +159,18 @@ function App() {
                 <td>Java | Python | SQL | CPP</td>
               </tr>
               <tr>
-                <td>Databases/Tools</td>
+                <td>
+                  Databases &<br />
+                  Tools
+                </td>
                 <td>MongoDB | MySQL | Git/GitHub | Postman | REST APIs</td>
               </tr>
 
               <tr>
-                <td>Frameworks/Libraries</td>
+                <td>
+                  Frameworks &<br />
+                  Libraries
+                </td>
                 <td>
                   Spring Boot | Pandas | NumPy | Seaborn | Matplotlib | Django
                 </td>
@@ -327,7 +360,7 @@ function App() {
             {/* Item 1 */}
             <article className="achievement-card">
               <div className="achievement-thumb">
-                <img src="/IBM.png" alt="Investment award email" />
+                <img src="/IBM.png" alt="IBM" />
               </div>
               <div className="achievement-body">
                 <h4>
@@ -339,7 +372,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Know more →
+                  Know more
                 </a>
               </div>
             </article>
@@ -347,12 +380,11 @@ function App() {
             {/* Item 2 */}
             <article className="achievement-card">
               <div className="achievement-thumb">
-                <img src="/IEEE.png" alt="Shapatya 1st place" />
+                <img src="/IEEE.png" alt="IEEE" />
               </div>
               <div className="achievement-body">
                 <h4>
-                  IEEE Paper submitted: AI-Powered Resume Parsing <br />
-                  using Django
+                  IEEE Paper submitted: AI-Powered Resume Parsing using Django
                 </h4>
                 <a
                   className="achievement-link"
@@ -360,8 +392,25 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Know more →
+                  Know more
                 </a>
+              </div>
+            </article>
+
+            <article className="achievement-card">
+              <div className="achievement-thumb">
+                <img src="/PL_SQL.jpg" alt="Oracle" />
+              </div>
+              <div className="achievement-body">
+                <h4>Oracle Certified Database programmer using PL/SQL</h4>
+                {/*                 <a
+                  className="achievement-link"
+                  href="https://ieeexplore.ieee.org/document/11031656/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Know more →
+                </a> */}
               </div>
             </article>
           </div>
