@@ -159,12 +159,12 @@ function App() {
                 <td>ReactJS | NodeJS | NextJS | ExpressJS</td>
               </tr>
               <tr>
-                <td>Databases/Tools</td>
+                <td>Databases & Tools</td>
                 <td>MongoDB | MySQL | Git/GitHub | Postman | REST APIs</td>
               </tr>
 
               <tr>
-                <td>Frameworks/Libraries</td>
+                <td>Frameworks & Libraries</td>
                 <td>
                   Spring Boot | Pandas | NumPy | Seaborn | Matplotlib | Django
                 </td>
