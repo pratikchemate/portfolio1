@@ -112,7 +112,7 @@ function App() {
                   LinkedIn
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1b1zHhD5vPE7SQElwjUFqlosJIHBuTZHY/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1nkp32EKJZzBBGP7kxj9cY56tWeSOFEfU/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
