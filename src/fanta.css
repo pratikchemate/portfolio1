@@ -327,10 +327,12 @@ img {
 
 /* Tables */
 table {
-  width: fit-content;
-  border: 1px solid var(--border-primary);
-  background: var(--background-muted);
-  border-radius: var(--border-radius-small);
+  width: 100%;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  background: rgba(102, 126, 234, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 table tr:last-child td:first-child {
@@ -350,17 +352,21 @@ table tr:first-child th:last-child {
 }
 
 th {
-  background-color: var(--background-muted);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 700;
+  padding: 1rem;
 }
 
 td {
-  background: var(--background-primary);
+  background: white;
+  transition: all 0.2s ease;
 }
 
 td,
 th {
   text-align: left;
-  padding: 8px;
+  padding: 1rem;
 }
 
 thead {
@@ -373,7 +379,16 @@ tfoot {
 
 table tr:hover td,
 tbody tr:nth-child(even):hover td {
-  background-color: var(--background-muted);
+  background-color: rgba(102, 126, 234, 0.1);
+  transform: scale(1.01);
+}
+
+tbody tr {
+  transition: all 0.2s ease;
+}
+
+tbody tr:hover {
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
 }
 
 /* Form elements */
