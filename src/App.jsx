@@ -29,13 +29,13 @@ function App() {
       <header>
         <a>Pratik Chemate</a>
         <nav>
-          <a
+          {/* <a
             target="_blank"
             href="https://www.instagram.com/pratik.chemate/"
             rel="noreferrer"
           >
             <i className="fa-brands fa-instagram"></i>
-          </a>
+          </a> */}
           <a
             target="_blank"
             href="https://github.com/pratikchemate"
