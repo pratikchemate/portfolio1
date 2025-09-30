@@ -125,7 +125,7 @@ function App() {
             <div className="profile-pic">
               <img
                 className="imd"
-                src="/Pratik_profile_pic.jpg"
+                src="/Pratik_profile_pic1.jpg"
                 alt="Pratik Chemate"
               />
             </div>
