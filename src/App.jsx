@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Experience from "./Experience.jsx";
+import Greeting from "./Greeting";
 
 function App() {
   const [color, setColor] = useState("#0084ff");
@@ -27,7 +28,9 @@ function App() {
         />
       </head>
       <header>
-        <a>Pratik Chemate</a>
+        <a>
+          <Greeting />
+        </a>
         <nav>
           {/* <a
             target="_blank"
