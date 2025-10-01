@@ -170,6 +170,7 @@ section h2 {
 
 .intro-description {
   max-width: 500px;
+    align-items: left;
 }
 
 .links-container {
