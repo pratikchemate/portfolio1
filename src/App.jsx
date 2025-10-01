@@ -1,9 +1,9 @@
 import { useState } from "react";
+import "./fanta.css";
+import "./index.css";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./index.css";
-import "./fanta.css";
 import { useEffect } from "react";
 import Experience from "./Experience.jsx";
 
