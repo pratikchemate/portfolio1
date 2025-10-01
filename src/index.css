@@ -14,7 +14,7 @@ html {
 
 .intro-description {
   max-width: 600px;
-  align-items: center;
+  align-items: left;
 }
 .intro-container {
   display: flex;
