@@ -1,17 +1,30 @@
 import { useState } from "react";
+import "./fanta.css";
+import "./index.css";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./index.css";
-import "./fanta.css";
 import { useEffect } from "react";
 import Experience from "./Experience.jsx";
+import Greeting from "./Greeting";
 
 function App() {
   const [color, setColor] = useState("#0084ff");
   const [showColorDiv, setShowColorDiv] = useState(false);
 
   useEffect(() => {
+
+    const handleScroll = () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
     AOS.init({ duration: 1000, easing: "ease-out-back" });
   }, []);
 
@@ -27,7 +40,9 @@ function App() {
         />
       </head>
       <header>
-        <a>Pratik Chemate</a>
+        <a>
+          <Greeting />
+        </a>
         <nav>
           {/* <a
             target="_blank"
@@ -112,7 +127,7 @@ function App() {
                   LinkedIn
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1nkp32EKJZzBBGP7kxj9cY56tWeSOFEfU/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1qSM9DCxU0-1VwQRa3ptYHtV2ZCBumqYS/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
