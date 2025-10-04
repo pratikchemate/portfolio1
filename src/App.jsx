@@ -13,18 +13,6 @@ function App() {
   const [showColorDiv, setShowColorDiv] = useState(false);
 
   useEffect(() => {
-
-    const handleScroll = () => {
-      const header = document.querySelector('header');
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
     AOS.init({ duration: 1000, easing: "ease-out-back" });
   }, []);
 
@@ -91,7 +79,7 @@ function App() {
                   <ul>
                     <li>
                       {" "}
-                      I’m a passionate and adaptable developer with strong
+                      I'm a passionate and adaptable developer with strong
                       skills in Java, Python, JavaScript, SQL, and modern
                       frameworks like React, Node.js, Express, and Spring Boot.
                     </li>
