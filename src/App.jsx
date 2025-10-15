@@ -32,7 +32,8 @@ function App() {
   return (
     <>
       <header>
-        <a>
+        {/* <a href="/">Pratik Chemate</a> */}
+        <a className="greeting-badge">
           <Greeting />
         </a>
         <nav>
@@ -62,68 +63,113 @@ function App() {
       </header>
 
       <main>
-        <section className="bounce-in" data-aos="fade-up">
+        <section className="hero-section bounce-in" data-aos="fade-up">
+          <div className="floating-particles">
+            <div className="particle"></div>
+            <div className="particle"></div>
+            <div className="particle"></div>
+            <div className="particle"></div>
+            <div className="particle"></div>
+          </div>
           <div className="intro-container">
             {/* Left: Intro Text */}
             <div className="intro-text">
-              <h1>Pratik Chemate</h1>
-              <p>Software Developer</p>
+              <h1 className="hero-title">
+                <span className="title-line">Pratik Chemate</span>
+                <span className="title-subtitle">Software Developer</span>
+              </h1>
               <div className="intro-description">
-                <h5>
-                  A computer engineer by qualification, a coder by trade! <br />
+                <h5 className="tagline">
+                  A computer engineer by qualification, a coder by trade!
                 </h5>
-                <ul>
-                  <li>
-                    I’m a passionate and adaptable developer with strong skills
-                    in Java, Python, JavaScript, SQL, and modern frameworks like
-                    React, Node.js, Express, and Spring Boot.
-                  </li>
-                  <li>
-                    I focus on building secure, scalable, and user-friendly
-                    applications, backed by solid knowledge of DSA, OOP, OS, and
-                    AI/ML basics.
-                  </li>
-                  <li>
-                    Open to networking, collaboration, and opportunities where
-                    technology meets innovation.
-                  </li>
-                </ul>
-                <h5>Based in Pune, INDIA.</h5>
+                <div className="description-grid">
+                  <div className="description-item">
+                    <div className="icon-wrapper">
+                      <i className="fa-solid fa-code"></i>
+                    </div>
+                    <p>
+                      I'm a passionate and adaptable developer with strong
+                      skills in Java, Python, JavaScript, SQL, and modern
+                      frameworks like React, Node.js, Express, and Spring Boot.
+                    </p>
+                  </div>
+                  <div className="description-item">
+                    <div className="icon-wrapper">
+                      <i className="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <p>
+                      I focus on building secure, scalable, and user-friendly
+                      applications, backed by solid knowledge of DSA, OOP, OS,
+                      and AI/ML basics.
+                    </p>
+                  </div>
+                  <div className="description-item">
+                    <div className="icon-wrapper">
+                      <i className="fa-solid fa-handshake"></i>
+                    </div>
+                    <p>
+                      Open to networking, collaboration, and opportunities where
+                      technology meets innovation.
+                    </p>
+                  </div>
+                </div>
+                <div className="location-badge">
+                  <i className="fa-solid fa-location-dot"></i>
+                  <span>Based in Pune, INDIA</span>
+                </div>
               </div>
               <div className="links-container">
-                <i className="fa-solid link-arrow fa-arrow-right"></i>
-                <a href="mailto:pratikchemate@gmail.com">Email me</a>
+                <div className="link-arrow-wrapper">
+                  <i className="fa-solid link-arrow fa-arrow-right"></i>
+                </div>
+                <a
+                  href="mailto:pratikchemate@gmail.com"
+                  className="cta-button primary"
+                >
+                  <i className="fa-solid fa-envelope"></i>
+                  Email me
+                </a>
                 <a
                   href="https://github.com/pratikchemate"
                   target="_blank"
                   rel="noreferrer"
+                  className="cta-button secondary"
                 >
+                  <i className="fa-brands fa-github"></i>
                   GitHub
                 </a>
                 <a
                   href="https://www.linkedin.com/in/pratikchemate/"
                   target="_blank"
                   rel="noreferrer"
+                  className="cta-button secondary"
                 >
+                  <i className="fa-brands fa-linkedin"></i>
                   LinkedIn
                 </a>
                 <a
                   href="https://drive.google.com/file/d/1qSM9DCxU0-1VwQRa3ptYHtV2ZCBumqYS/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
+                  className="cta-button secondary"
                 >
-                  My-Resume
+                  <i className="fa-solid fa-file-pdf"></i>
+                  My Resume
                 </a>
               </div>
             </div>
 
             {/* Right: Image */}
             <div className="profile-pic">
-              <img
-                className="imd"
-                src="/Pratik_profile_pic1.jpg"
-                alt="Pratik Chemate"
-              />
+              <div className="image-container">
+                <div className="image-glow"></div>
+                <img
+                  className="imd"
+                  src="/Pratik_profile_pic1.jpg"
+                  alt="Pratik Chemate"
+                />
+                <div className="image-decoration"></div>
+              </div>
             </div>
           </div>
 
@@ -141,205 +187,328 @@ function App() {
           )} */}
         </section>
 
-        <section className="bounce-in" data-aos="fade-right">
-          <h2>Skills</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Area</th>
-                <th>Technologies</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Javascript</td>
-                <td>ReactJS | NodeJS | NextJS | ExpressJS</td>
-              </tr>
-              <tr>
-                <td>Databases & Tools</td>
-                <td>MongoDB | MySQL | Git/GitHub | Postman | REST APIs</td>
-              </tr>
-              <tr>
-                <td>Frameworks & Libraries</td>
-                <td>
-                  Spring Boot | Pandas | NumPy | Seaborn | Matplotlib | Django
-                </td>
-              </tr>
-              <tr>
-                <td>Web</td>
-                <td>TailwindCSS | SQL | PostgreSQL | Firebase | AWS</td>
-              </tr>
-            </tbody>
-          </table>
+        <section className="skills-section bounce-in" data-aos="fade-right">
+          <div className="section-header">
+            <h2>Skills & Expertise</h2>
+            <p className="section-subtitle">Technologies I work with</p>
+          </div>
+          <div className="skills-grid">
+            <div className="skill-category">
+              <div className="skill-category-header">
+                <i className="fa-brands fa-js-square"></i>
+                <h3>JavaScript</h3>
+              </div>
+              <div className="skill-tags">
+                <span className="skill-tag">ReactJS</span>
+                <span className="skill-tag">NodeJS</span>
+                <span className="skill-tag">NextJS</span>
+                <span className="skill-tag">ExpressJS</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <div className="skill-category-header">
+                <i className="fa-solid fa-database"></i>
+                <h3>Databases & Tools</h3>
+              </div>
+              <div className="skill-tags">
+                <span className="skill-tag">MongoDB</span>
+                <span className="skill-tag">MySQL</span>
+                <span className="skill-tag">Git/GitHub</span>
+                <span className="skill-tag">Postman</span>
+                <span className="skill-tag">REST APIs</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <div className="skill-category-header">
+                <i className="fa-solid fa-layer-group"></i>
+                <h3>Frameworks & Libraries</h3>
+              </div>
+              <div className="skill-tags">
+                <span className="skill-tag">Spring Boot</span>
+                <span className="skill-tag">Pandas</span>
+                <span className="skill-tag">NumPy</span>
+                <span className="skill-tag">Seaborn</span>
+                <span className="skill-tag">Matplotlib</span>
+                <span className="skill-tag">Django</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <div className="skill-category-header">
+                <i className="fa-solid fa-globe"></i>
+                <h3>Web Technologies</h3>
+              </div>
+              <div className="skill-tags">
+                <span className="skill-tag">TailwindCSS</span>
+                <span className="skill-tag">SQL</span>
+                <span className="skill-tag">PostgreSQL</span>
+                <span className="skill-tag">Firebase</span>
+                <span className="skill-tag">AWS</span>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* <Experience /> */}
 
-        <section className="bounce-in" data-aos="fade-down">
-          <h2>Projects</h2>
-          <div className="cards-grid">
+        <section className="projects-section bounce-in" data-aos="fade-down">
+          <div className="section-header">
+            <h2>Featured Projects</h2>
+            <p className="section-subtitle">Some of my recent work</p>
+          </div>
+          <div className="projects-grid">
             {/* Project 1 */}
-            <div className="project-card">
-              <div className="tech-list">
-                <div className="card-button-secondary">
-                  <p>AI Email Reply Generator</p>
+            <div className="project-card enhanced">
+              <div className="project-header">
+                <div className="project-icon">
+                  <i className="fa-solid fa-robot"></i>
                 </div>
+                <div className="project-title">
+                  <h3>AI Email Reply Generator</h3>
+                  <div className="project-tech">
+                    <span>Spring Boot</span>
+                    <span>React</span>
+                    <span>Google Gemini</span>
+                  </div>
+                </div>
+              </div>
+              <div className="project-content">
                 <p>
                   Built a full-stack AI email reply generator using Spring Boot
                   (REST API with WebClient), React (MUI) and integrating Google
                   Gemini (API) for context-aware drafts with selectable tone.
                 </p>
               </div>
-              <div className="project-links">
-                <a
-                  target="_blank"
-                  href="https://github.com/pratikchemate/AI-Email-replier"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-              </div>
-              <div className="img-div">
-                <img src="/AI-email.png" alt="project" />
+              <div className="project-footer">
+                <div className="project-links">
+                  <a
+                    target="_blank"
+                    href="https://github.com/pratikchemate/AI-Email-replier"
+                    rel="noreferrer"
+                    className="project-link"
+                  >
+                    <i className="fa-brands fa-github"></i>
+                    View Code
+                  </a>
+                </div>
+                <div className="project-image">
+                  <img src="/AI-email.png" alt="AI Email Reply Generator" />
+                </div>
               </div>
             </div>
 
             {/* Project 2 */}
-            <div className="project-card">
-              <div className="tech-list">
-                <div className="card-button-secondary">
-                  <p>The Brogram – 30-Day Workout Tracker</p>
+            <div className="project-card enhanced">
+              <div className="project-header">
+                <div className="project-icon">
+                  <i className="fa-solid fa-dumbbell"></i>
                 </div>
+                <div className="project-title">
+                  <h3>The Brogram – 30-Day Workout Tracker</h3>
+                  <div className="project-tech">
+                    <span>React</span>
+                    <span>Vite</span>
+                    <span>CSS3</span>
+                  </div>
+                </div>
+              </div>
+              <div className="project-content">
                 <p>
                   Brogram is a simple, interactive 30-day workout tracking web
-                  app built with React.js and Vite.
+                  app built with React.js and Vite. Features progress tracking,
+                  workout scheduling, and motivational elements.
                 </p>
               </div>
-              <div className="project-links">
-                <a
-                  target="_blank"
-                  href="https://brogram-pratik-chemate.vercel.app"
-                  rel="noreferrer"
-                >
-                  Live
-                </a>
-                <a
-                  target="_blank"
-                  href="https://github.com/pratikchemate/Brogram/"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-              </div>
-              <div className="img-div">
-                <img src="/brogram.png" alt="project" />
+              <div className="project-footer">
+                <div className="project-links">
+                  <a
+                    target="_blank"
+                    href="https://brogram-pratik-chemate.vercel.app"
+                    rel="noreferrer"
+                    className="project-link live"
+                  >
+                    <i className="fa-solid fa-external-link-alt"></i>
+                    Live Demo
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/pratikchemate/Brogram/"
+                    rel="noreferrer"
+                    className="project-link"
+                  >
+                    <i className="fa-brands fa-github"></i>
+                    View Code
+                  </a>
+                </div>
+                <div className="project-image">
+                  <img src="/brogram.png" alt="The Brogram Workout Tracker" />
+                </div>
               </div>
             </div>
 
             {/* Project 3 */}
-            <div className="project-card">
-              <div className="tech-list">
-                <div className="card-button-secondary">
-                  <p>Paytm Wallet Clone</p>
+            <div className="project-card enhanced">
+              <div className="project-header">
+                <div className="project-icon">
+                  <i className="fa-solid fa-wallet"></i>
                 </div>
+                <div className="project-title">
+                  <h3>Paytm Wallet Clone</h3>
+                  <div className="project-tech">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>MySQL</span>
+                  </div>
+                </div>
+              </div>
+              <div className="project-content">
                 <p>
                   Designed and implemented a secure authentication system with
                   role-based access control, wallet management, and money
-                  transfer functionality.
+                  transfer functionality. Includes transaction history and
+                  security features.
                 </p>
               </div>
-              <div className="project-links">
-                <a
-                  target="_blank"
-                  href="https://github.com/pratikchemate/Paytm-Clone"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-              </div>
-              <div className="img-div">
-                <img src="/Paytm.png" alt="project" />
+              <div className="project-footer">
+                <div className="project-links">
+                  <a
+                    target="_blank"
+                    href="https://github.com/pratikchemate/Paytm-Clone"
+                    rel="noreferrer"
+                    className="project-link"
+                  >
+                    <i className="fa-brands fa-github"></i>
+                    View Code
+                  </a>
+                </div>
+                <div className="project-image">
+                  <img src="/Paytm.png" alt="Paytm Wallet Clone" />
+                </div>
               </div>
             </div>
 
-            {/* Project 2 */}
-            <div className="project-card">
-              <div className="tech-list">
-                <div className="card-button-secondary">
-                  <p>GitHub profile searcher using Git API</p>
+            {/* Project 4 */}
+            <div className="project-card enhanced">
+              <div className="project-header">
+                <div className="project-icon">
+                  <i className="fa-brands fa-github"></i>
                 </div>
+                <div className="project-title">
+                  <h3>GitHub Profile Searcher</h3>
+                  <div className="project-tech">
+                    <span>JavaScript</span>
+                    <span>GitHub API</span>
+                    <span>CSS3</span>
+                  </div>
+                </div>
+              </div>
+              <div className="project-content">
                 <p>
                   Developed a GitHub Profile Searcher using Git API,
                   streamlining the retrieval of user profiles and repositories
-                  with a userfriendly interface. Achieved a 40% improvement in
-                  data retrieval efficiency, enhancing user experience and
-                  showcasing proficiency in API integration and UI/UX design.
+                  with a user-friendly interface. Achieved a 40% improvement in
+                  data retrieval efficiency.
                 </p>
               </div>
-              <div className="project-links">
-                <a
-                  target="_blank"
-                  href="https://github.com/pratikchemate/AI-Email-replier"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-              </div>
-              <div className="img-div">
-                <img src="/AI-email.png" alt="project" />
+              <div className="project-footer">
+                <div className="project-links">
+                  <a
+                    target="_blank"
+                    href="https://github.com/pratikchemate/AI-Email-replier"
+                    rel="noreferrer"
+                    className="project-link"
+                  >
+                    <i className="fa-brands fa-github"></i>
+                    View Code
+                  </a>
+                </div>
+                <div className="project-image">
+                  <img src="/AI-email.png" alt="GitHub Profile Searcher" />
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Achievements & Certificates */}
-        <section className="bounce-in" data-aos="fade-up">
-          <h2 className="achievements-heading">Achievements & Certificates</h2>
-          <div className="achievements-list">
-            <article className="achievement-card">
-              <div className="achievement-thumb">
-                <img src="/IBM.png" alt="IBM" />
+        <section className="achievements-section bounce-in" data-aos="fade-up">
+          <div className="section-header">
+            <h2>Achievements & Certificates</h2>
+            <p className="section-subtitle">
+              Professional accomplishments and certifications
+            </p>
+          </div>
+          <div className="achievements-grid">
+            <article className="achievement-card enhanced">
+              <div className="achievement-badge">
+                <i className="fa-solid fa-certificate"></i>
               </div>
-              <div className="achievement-body">
-                <h4>
-                  IBM Full Stack Software Developer Professional Certificate
-                </h4>
-                <a
-                  className="achievement-link"
-                  href="https://www.coursera.org/account/accomplishments/specialization/S8BS422X5XWW"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Know more
-                </a>
-              </div>
-            </article>
-
-            <article className="achievement-card">
-              <div className="achievement-thumb">
-                <img src="/IEEE.png" alt="IEEE" />
-              </div>
-              <div className="achievement-body">
-                <h4>
-                  IEEE Paper submitted: AI-Powered Resume Parsing using Django
-                </h4>
-                <a
-                  className="achievement-link"
-                  href="https://ieeexplore.ieee.org/document/11031656/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Know more
-                </a>
+              <div className="achievement-content">
+                <div className="achievement-thumb">
+                  <img src="/IBM.png" alt="IBM" />
+                </div>
+                <div className="achievement-body">
+                  <h4>
+                    IBM Full Stack Software Developer Professional Certificate
+                  </h4>
+                  <p>
+                    Comprehensive certification covering full-stack development
+                    with modern technologies and best practices.
+                  </p>
+                  <a
+                    className="achievement-link"
+                    href="https://www.coursera.org/account/accomplishments/specialization/S8BS422X5XWW"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa-solid fa-external-link-alt"></i>
+                    View Certificate
+                  </a>
+                </div>
               </div>
             </article>
 
-            <article className="achievement-card">
-              <div className="achievement-thumb">
-                <img src="/PL_SQL.jpg" alt="Oracle" />
+            <article className="achievement-card enhanced">
+              <div className="achievement-badge">
+                <i className="fa-solid fa-graduation-cap"></i>
               </div>
-              <div className="achievement-body">
-                <h4>Oracle Certified Database programmer using PL/SQL</h4>
+              <div className="achievement-content">
+                <div className="achievement-thumb">
+                  <img src="/IEEE.png" alt="IEEE" />
+                </div>
+                <div className="achievement-body">
+                  <h4>IEEE Paper: AI-Powered Resume Parsing using Django</h4>
+                  <p>
+                    Published research paper on AI-driven resume parsing system
+                    using Django framework and machine learning.
+                  </p>
+                  <a
+                    className="achievement-link"
+                    href="https://ieeexplore.ieee.org/document/11031656/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa-solid fa-external-link-alt"></i>
+                    Read Paper
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article className="achievement-card enhanced">
+              <div className="achievement-badge">
+                <i className="fa-solid fa-database"></i>
+              </div>
+              <div className="achievement-content">
+                <div className="achievement-thumb">
+                  <img src="/PL_SQL.jpg" alt="Oracle" />
+                </div>
+                <div className="achievement-body">
+                  <h4>Oracle Certified Database Programmer using PL/SQL</h4>
+                  <p>
+                    Professional certification demonstrating expertise in Oracle
+                    database programming and PL/SQL development.
+                  </p>
+                </div>
               </div>
             </article>
           </div>

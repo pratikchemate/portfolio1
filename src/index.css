@@ -54,6 +54,8 @@ html {
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  position: relative;
+  z-index: 2;
 }
 
 .intro-text h1 {
@@ -123,7 +125,7 @@ html {
 
 .links-container a {
   padding: 0.75rem 1.75rem;
-  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #f472b6 100%);
   color: white;
   border-radius: 12px;
   text-decoration: none;
@@ -143,7 +145,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #4c1d95 0%, #8b5cf6 100%);
   z-index: -1;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -371,5 +373,107 @@ html {
   .imd {
     width: 300px;
     height: 300px;
+  }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .floating-particles {
+    display: none;
+  }
+
+  .description-grid {
+    gap: 1rem;
+  }
+
+  .description-item {
+    padding: 0.75rem;
+  }
+
+  .icon-wrapper {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .links-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .link-arrow-wrapper {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+    max-width: 280px;
+  }
+}
+
+/* Enhanced scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+}
+
+/* Loading animation for images */
+.imd {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Improved focus states for accessibility */
+.cta-button:focus,
+.project-link:focus,
+.achievement-link:focus,
+nav a:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .floating-particles {
+    display: none;
   }
 }
