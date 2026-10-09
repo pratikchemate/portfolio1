@@ -1,9 +1,5 @@
 /* src/experience.css — uses shared tokens defined in App.css */
 
-.xp-section {
-  padding: 0;
-}
-
 .xp-list {
   max-width: 100%;
   margin: 0;
@@ -14,11 +10,11 @@
 .xp-item {
   display: grid;
   grid-template-columns: 160px 1fr;
-  gap: 2rem;
-  background: var(--bg-elevated);
+  gap: 1.5rem;
+  background: var(--bg);
   border: 1px solid var(--panel-border);
-  border-radius: var(--radius);
-  padding: 2rem;
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
 }
 
 .xp-date {
