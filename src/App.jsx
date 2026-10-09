@@ -363,9 +363,10 @@ function App() {
               </div>
               <div className="project-content">
                 <p>
-                  Built using the MERN stack with secure user authentication
-                  and wallet/transaction management during the EY-GDS
-                  internship — improved API response times by 30%.
+                  MERN stack wallet app with secure user authentication and
+                  wallet/transaction management, built during the EY-GDS
+                  &amp; AICTE full-stack internship — improved API response
+                  times by 30%.
                 </p>
               </div>
               <div className="project-footer">
