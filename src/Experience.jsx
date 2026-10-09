@@ -1,5 +1,4 @@
 // src/Experience.jsx
-import React from "react";
 import { experiences } from "./experience.js"; // ./ means "same folder"
 import "./experience.css";
 
@@ -14,7 +13,9 @@ const ExperienceItem = ({
   role,
   company,
   companyUrl,
+  note,
   summary,
+  bullets = [],
   tags = [],
 }) => (
   <li className="xp-item">
@@ -38,7 +39,17 @@ const ExperienceItem = ({
         )}
       </h3>
 
-      <p className="xp-summary">{summary}</p>
+      {note && <p className="xp-note">{note}</p>}
+
+      {summary && <p className="xp-summary">{summary}</p>}
+
+      {bullets.length > 0 && (
+        <ul className="xp-bullets">
+          {bullets.map((bullet, i) => (
+            <li key={i}>{bullet}</li>
+          ))}
+        </ul>
+      )}
 
       {tags.length > 0 && (
         <div className="xp-tags" role="list" aria-label="Technologies used">
@@ -54,10 +65,9 @@ const ExperienceItem = ({
 const Experience = () => {
   return (
     <section className="xp-section" id="experience" aria-labelledby="xp-h">
-      <div className="xp-header-wrap">
-        <h2 className="xp-header" id="xp-h">
-          Experience
-        </h2>
+      <div className="section-header">
+        <p className="section-eyebrow">02 — Experience</p>
+        <h2 id="xp-h">Experience</h2>
       </div>
 
       <ol className="xp-list">
